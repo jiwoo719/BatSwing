@@ -1,0 +1,71 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Rozha+One&display=swap");
+@import url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-1@1.0/RiaSans-ExtraBold.woff2");
+@import url("https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/gh/fontbee/font@main/Mangoboard/MangoDdobak-R.woff2");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "RiaSans-ExtraBold";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.logo {
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+li {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+
+h1 {
+  font-family: "Rozha One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 128px;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+
+h2 {
+  font-family: "Rozha One", serif;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 140%;
+  letter-spacing: 1%;
+}
+
+h3 {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: 1%;
+  color: #fff;
+}
+
+p {
+  font-family: "MangoDdobak-R";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn {
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 1%;
+}/*# sourceMappingURL=common.css.map */
