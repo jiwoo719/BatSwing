@@ -1,15 +1,70 @@
-@import url("../css/common.css");
-
+@import url("../scss/common.scss");
+header {
+  background-color: #F9982F;
+}
 header .navbar {
   height: 100px;
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 header .navbar .logo {
   color: #1E3542;
+  font-size: 28px;
+}
+header .d-flex {
+  justify-content: center;
 }
 header ul {
   list-style: none;
-  gap: 20px;
+  padding: 0;
+  gap: 50px;
+  margin-top: 5px;
 }
 header ul li a {
-  color: black;
+  color: #fff;
+  font-size: 20px;
+}
+
+main {
+  background-color: #F9982F;
+  height: 850px;
+  overflow: hidden;
+}
+main .container {
+  padding-top: 20px;
+}
+main .container p {
+  font-size: 24px;
+  color: #1E3542;
+  font-weight: 500;
+}
+main .container .btn {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: #fff;
+}
+main .container .btn:hover {
+  border: 1px solid #1E3542;
+  color: #1E3542;
+}
+main .container .btn:active {
+  border: none;
+  color: #F9982F;
+  background-color: #1E3542;
+}
+main .container .main_img {
+  margin-top: 20px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+main .container .main_img .lotate-img {
+  animation: spin 15s linear infinite;
 }/*# sourceMappingURL=style.css.map */
