@@ -5,32 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BatSwing</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
 
 <body>
-    <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <div class="navbar text-center align-content-center">
-                <div class="logo">
-                    BATSWING
-                </div>
-                <div class="menu">
-                    <ul class="d-flex mb-0">
-                        <li><a href="#">SWING</a></li>
-                        <li><a href="#">CLASS</a></li>
-                        <li><a href="#">SOCIAL</a></li>
-                        <li><a href="#">EVENT</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <a href="#" class="menu_i"><i class="fa-solid fa-bars"></i></a>
-                    </ul>
-                </div>
+            <p class="logo">BATSWING</p>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SWING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLASS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SOCIAL</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                            aria-expanded="false">
+                            EVENT
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">국내</a>
+                            <a class="dropdown-item" href="#">국외</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <section class="sec01 overflow-hidden">
         <div class="container">
@@ -125,7 +142,8 @@
                     <div class="d-flex">
                         <p class="p1 p1_1">DJ</p>
                         <p>마이쮸</p>
-                        <a href="https://www.instagram.com/leeej0_0?igsh=MXcwM2hjZTNtNWdiaQ%3D%3D&utm_source=qr" target="_blank" class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/leeej0_0?igsh=MXcwM2hjZTNtNWdiaQ%3D%3D&utm_source=qr"
+                            target="_blank" class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
 
                     </div>
                     <div class="d-flex">
@@ -136,8 +154,10 @@
                     <div class="d-flex">
                         <p class="p1">장소</p>
                         <p>인더무드신림 북욱 화양연화</p>
-                        <a href="https://www.instagram.com/inthemoodsillim?igsh=MWZ1a2sybmFnanR3eg==" target="_blank" class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://maps.app.goo.gl/kfSHkhmHmj9xJL3h9" target="_blank" class="sec03_i2"><i class="fa-solid fa-location-dot"></i></a>
+                        <a href="https://www.instagram.com/inthemoodsillim?igsh=MWZ1a2sybmFnanR3eg==" target="_blank"
+                            class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://maps.app.goo.gl/kfSHkhmHmj9xJL3h9" target="_blank" class="sec03_i2"><i
+                                class="fa-solid fa-location-dot"></i></a>
 
                     </div>
                     <p class="p2">스윙은 어디서나! 당신의 지역에서도 소셜을 즐겨보세요.</p>
@@ -217,11 +237,13 @@
                         BATSWING
                     </div>
                     <div class="d-flex">
-                        <a href="https://www.instagram.com/inthemoodsillim?igsh=MWZ1a2sybmFnanR3eg==" target="_blank" class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.youtube.com/@since2003_batswing" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/inthemoodsillim?igsh=MWZ1a2sybmFnanR3eg==" target="_blank"
+                            class="sec03_i"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@since2003_batswing" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
                     </div>
                     <p>대한민국 서울특별시 관악구 남부순환로 1552</p>
-                    <p>대표이사  이지우</p>
+                    <p>대표이사 이지우</p>
                     <p>copyright BATSWING Acdemy. all rights reserved.</p>
                 </div>
             </div>
@@ -242,6 +264,7 @@
                 el: ".swiper-scrollbar",
             },
         });
+
     </script>
 </body>
 
