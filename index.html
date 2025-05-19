@@ -136,7 +136,7 @@
                         <img src="assets/images/sec03img.png" alt="lp이미지">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mt">
                     <div class="d-flex">
                         <p class="p1 p1_1">DJ</p>
                         <p>마이쮸</p>
@@ -191,30 +191,72 @@
                     <div class="tab-content mt-5" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab">
-                            <div class="d-flex">
-                                <a href="#">
-                                    <div class="event-img">
-                                        <img src="assets/images/event1.png" alt="이벤트1">
+
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="event_con">
+                                            <a href="#">
+                                                <div class="event-img">
+                                                    <img src="assets/images/event1.png" alt="이벤트1">
+                                                </div>
+                                            </a>
+                                            <div class="event_text">
+                                                <p class="t1">워크샵 & 소셜</p>
+                                                <p class="t2">나는 슬로우</p>
+                                                <p class="t3"><i class="fa-solid fa-calendar"></i>2025. 05. 06 화요일</p>
+                                                <a href="#"><i class="fa-solid fa-location-dot"></i>합정 소셜클럽</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#">
-                                    <div class="event-img">
-                                        <img src="assets/images/event2.png" alt="이벤트2">
+                                    <div class="col-md-3">
+                                        <div class="event_con">
+                                            <a href="#">
+                                                <div class="event-img">
+                                                    <img src="assets/images/event2.png" alt="이벤트2">
+                                                </div>
+                                            </a>
+                                            <div class="event_text">
+                                                <p class="t1">소셜</p>
+                                                <p class="t2">2025 Swing in The Park</p>
+                                                <p class="t3"><i class="fa-solid fa-calendar"></i>2025. 05. 06 화요일</p>
+                                                <a href="#"><i class="fa-solid fa-location-dot"></i>건대입구 광장</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <a href="#">
-                                    <div class="event-img">
-                                        <img src="assets/images/event3.png" alt="이벤트3">
+                                    <div class="col-md-3">
+                                        <div class="event_con">
+                                            <a href="#">
+                                                <div class="event-img">
+                                                    <img src="assets/images/event3.png" alt="이벤트3">
+                                                </div>
+                                            </a>
+                                            <div class="event_text">
+                                                <p class="t1">워크샵 & 소셜 & 대회</p>
+                                                <p class="t2">나는 스타다</p>
+                                                <p class="t3"><i class="fa-solid fa-calendar"></i>2025. 05. 05 월요일</p>
+                                                <a href="#"><i class="fa-solid fa-location-dot"></i> 남부터미널 빅애플 </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </a>
-                                <div class="event-img4">
-                                    <img src="assets/images/event4.png" alt="이벤트4">
-                                    <div class="gradient text-center">
-                                        <p>국내 다양한 행사 보기</p>
-                                        <a href="#" class="btn">View More</a>
+                                    <div class="col-md-3">
+                                        <div class="event_con">
+                                            <a href="#">
+                                                <div class="event-img4">
+                                                    <img src="assets/images/event4.png" alt="이벤트4">
+                                                    <div class="gradient text-center">
+                                                        <div class="event4-text">
+                                                            <p>국내 다양한 행사 보기</p>
+                                                            <a href="#" class="btn">View More</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
@@ -260,6 +302,27 @@
             spaceBetween: 30,
             scrollbar: {
                 el: ".swiper-scrollbar",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                },
+                340: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                540: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                1280: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
         });
 

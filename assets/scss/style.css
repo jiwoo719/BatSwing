@@ -21,10 +21,13 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   background-color: transparent;
   border: none;
 }
+nav .container .navbar-collapse {
+  justify-content: end;
+}
 
 .sec01 {
   background-color: #F9982F;
-  height: 680px;
+  height: 650px;
   overflow: hidden;
 }
 .sec01 .container p {
@@ -34,8 +37,8 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
 }
 .sec01 .container .custom-btn {
   padding: 10px 25px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 400;
   background: transparent;
   outline: none !important;
   cursor: pointer;
@@ -44,6 +47,8 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   display: inline-block;
 }
 .sec01 .container .btn-4 {
+  color: #fff;
+  margin-top: 20px;
   width: 130px;
   height: 40px;
   line-height: 42px;
@@ -62,8 +67,8 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   content: "";
   left: 0;
   bottom: 0;
-  background: #000;
-  transition: all 0.3s ease;
+  background: #fff;
+  transition: all 0.2s ease;
 }
 .sec01 .container .btn-4 span:before {
   width: 2px;
@@ -85,8 +90,8 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   content: "";
   right: 0;
   top: 0;
-  background: #000;
-  transition: all 0.3s ease;
+  background: #fff;
+  transition: all 0.2s ease;
 }
 .sec01 .container .btn-4:before {
   height: 50%;
@@ -151,6 +156,9 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   background-color: #F9982F;
   color: #1E3542;
 }
+.sec02 .col-md-8 {
+  margin-top: 20px;
+}
 .sec02 .col-md-8 .swiper-scrollbar {
   position: sticky;
   margin-top: 50px;
@@ -178,48 +186,57 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
 .sec03 .container .mt-8 {
   margin-top: 80px;
 }
-.sec03 .container .col-md-6 a {
+.sec03 .container .mt-8 .col-md-6 .sec03-img {
+  width: 100%;
+}
+.sec03 .container .mt-8 .col-md-6 .sec03-img img {
+  width: 100%;
+}
+.sec03 .container .mt-8 .mt {
+  margin-top: 20px;
+}
+.sec03 .container .mt-8 .mt a {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 5px 10px;
 }
-.sec03 .container .col-md-6 a:hover {
+.sec03 .container .mt-8 .mt a:hover {
   color: #F9982F;
   border: 1px solid #F9982F;
   text-decoration: none;
   transition-duration: 0.6s;
 }
-.sec03 .container .col-md-6 a:active {
+.sec03 .container .mt-8 .mt a:active {
   background-color: #F9982F;
   color: #1E3542;
 }
-.sec03 .container .col-md-6 .d-flex {
+.sec03 .container .mt-8 .mt .d-flex {
   gap: 60px;
   align-items: center;
 }
-.sec03 .container .col-md-6 .d-flex P {
+.sec03 .container .mt-8 .mt .d-flex P {
   color: #fff;
   font-size: 20px;
 }
-.sec03 .container .col-md-6 .d-flex .p1 {
+.sec03 .container .mt-8 .mt .d-flex .p1 {
   font-size: 24px;
   font-weight: 700;
 }
-.sec03 .container .col-md-6 .d-flex .p1_1 {
+.sec03 .container .mt-8 .mt .d-flex .p1_1 {
   margin-right: 15px;
 }
-.sec03 .container .col-md-6 .d-flex .sec03_i {
+.sec03 .container .mt-8 .mt .d-flex .sec03_i {
   margin-left: -60px;
   font-size: 25px;
   border: 0;
 }
-.sec03 .container .col-md-6 .d-flex .sec03_i2 {
+.sec03 .container .mt-8 .mt .d-flex .sec03_i2 {
   margin-left: -70px;
   font-size: 25px;
   border: 0;
 }
-.sec03 .container .col-md-6 .p2 {
+.sec03 .container .mt-8 .mt .p2 {
   color: #fff;
   margin: 50px 0;
 }
@@ -253,24 +270,59 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
 .sec04 .tab-content .tab-pane {
   transition: opacity 0.5s ease-in-out;
 }
-.sec04 .tab-content .d-flex {
-  justify-content: center;
-  gap: 30px;
+.sec04 .tab-content .container-fluid .col-md-3 .event_con {
+  margin-top: 20px;
 }
-.sec04 .tab-content .d-flex a:hover {
-  transform: translateY(2px);
-  transition-duration: 0.6s;
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img {
+  width: 100%;
 }
-.sec04 .tab-content .d-flex .event-img4 {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img img {
+  width: 100%;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text {
+  background: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 25px 20px;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text .t1 {
+  font-size: 12px;
+  color: #F9982F;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text .t2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1E3542;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text .t3 {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #1E3542;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text .t3 i {
+  margin-right: 10px;
+  color: #1E3542;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text a {
+  font-size: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #1E3542;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event_text a i {
+  margin-right: 10px;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
-.sec04 .tab-content .d-flex .event-img4 img {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 img {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
+  width: 100%;
 }
-.sec04 .tab-content .d-flex .event-img4 .gradient {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -279,23 +331,25 @@ nav .container .collapse ul li .dropdown .dropdown-menu {
   background: linear-gradient(to top, rgb(30, 53, 66) 5%, rgba(64, 83, 94, 0.5) 39%, rgba(225, 228, 230, 0.2) 81%, rgba(255, 255, 255, 0) 100%);
   border-radius: 10px;
 }
-.sec04 .tab-content .d-flex .event-img4 .gradient p {
-  margin-top: 280px;
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 .gradient .event4-text {
+  padding-top: 280px;
+}
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 .gradient .event4-text p {
   color: #fff;
   font-size: 18px;
 }
-.sec04 .tab-content .d-flex .event-img4 .gradient a {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 .gradient .event4-text .btn {
   color: #fff;
   border: 1px solid #fff;
   border-radius: 100px;
   padding: 5px 10px;
   margin-top: 20px;
 }
-.sec04 .tab-content .d-flex .event-img4 .gradient a:hover {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con .event-img4 .gradient .event4-text .btn:hover {
   color: #F9982F;
   border: 1px solid #F9982F;
 }
-.sec04 .tab-content .d-flex .event-img4:hover {
+.sec04 .tab-content .container-fluid .col-md-3 .event_con:hover {
   transform: translateY(2px);
   transition-duration: 0.6s;
 }
