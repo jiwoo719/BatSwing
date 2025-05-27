@@ -2,11 +2,13 @@
 
 nav {
     background-color: #F9982F;
+    z-index: 9999;
 
     .container {
         .logo {
             color: #1E3542;
             font-size: 36px;
+            text-decoration: none;
         }
 
         .navbar-toggler {
@@ -26,6 +28,10 @@ nav {
                         transition-duration: 0.6s;
                     }
 
+                    .nav-link.active{
+                        color: #1E3542 !important;
+                    }
+
                     .dropdown {
                         .dropdown-menu {
                             background-color: transparent;
@@ -42,12 +48,17 @@ nav {
     }
 }
 
-.sec01 {
+nav{
+    position: sticky;
+}
+
+.kv-top {
     background-color: #F9982F;
-    height: 650px;
+    height: 750px;
     overflow: hidden;
 
     .container {
+        padding: 100px 0 0 0;
         p {
             font-size: 18px;
             color: #1E3542;
@@ -139,7 +150,7 @@ nav {
             width: 100%;
         }
 
-        .main_img {
+        .kv-img {
             margin-top: 20px;
             width: 70%;
             position: relative;

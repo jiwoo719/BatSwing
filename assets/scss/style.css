@@ -1,10 +1,12 @@
 @import url("../scss/common.css");
 nav {
   background-color: #F9982F;
+  z-index: 9999;
 }
 nav .container .logo {
   color: #1E3542;
   font-size: 36px;
+  text-decoration: none;
 }
 nav .container .navbar-toggler {
   border: none;
@@ -17,6 +19,9 @@ nav .container .collapse ul li .nav-link:hover {
   color: #1E3542;
   transition-duration: 0.6s;
 }
+nav .container .collapse ul li .nav-link.active {
+  color: #1E3542 !important;
+}
 nav .container .collapse ul li .dropdown .dropdown-menu {
   background-color: transparent;
   border: none;
@@ -25,17 +30,24 @@ nav .container .navbar-collapse {
   justify-content: end;
 }
 
-.sec01 {
+nav {
+  position: sticky;
+}
+
+.kv-top {
   background-color: #F9982F;
-  height: 650px;
+  height: 750px;
   overflow: hidden;
 }
-.sec01 .container p {
+.kv-top .container {
+  padding: 100px 0 0 0;
+}
+.kv-top .container p {
   font-size: 18px;
   color: #1E3542;
   font-weight: 500;
 }
-.sec01 .container .custom-btn {
+.kv-top .container .custom-btn {
   padding: 10px 25px;
   font-family: "Kodchasan", sans-serif;
   font-weight: 400;
@@ -46,7 +58,7 @@ nav .container .navbar-collapse {
   position: relative;
   display: inline-block;
 }
-.sec01 .container .btn-4 {
+.kv-top .container .btn-4 {
   color: #fff;
   margin-top: 20px;
   width: 130px;
@@ -55,14 +67,14 @@ nav .container .navbar-collapse {
   padding: 0;
   border: none;
 }
-.sec01 .container .btn-4 span {
+.kv-top .container .btn-4 span {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
-.sec01 .container .btn-4 span:before,
-.sec01 .container .btn-4 span:after {
+.kv-top .container .btn-4 span:before,
+.kv-top .container .btn-4 span:after {
   position: absolute;
   content: "";
   left: 0;
@@ -70,22 +82,22 @@ nav .container .navbar-collapse {
   background: #fff;
   transition: all 0.2s ease;
 }
-.sec01 .container .btn-4 span:before {
+.kv-top .container .btn-4 span:before {
   width: 2px;
   height: 50%;
 }
-.sec01 .container .btn-4 span:after {
+.kv-top .container .btn-4 span:after {
   width: 20%;
   height: 2px;
 }
-.sec01 .container .btn-4 span:hover:before {
+.kv-top .container .btn-4 span:hover:before {
   height: 100%;
 }
-.sec01 .container .btn-4 span:hover:after {
+.kv-top .container .btn-4 span:hover:after {
   width: 100%;
 }
-.sec01 .container .btn-4:before,
-.sec01 .container .btn-4:after {
+.kv-top .container .btn-4:before,
+.kv-top .container .btn-4:after {
   position: absolute;
   content: "";
   right: 0;
@@ -93,21 +105,21 @@ nav .container .navbar-collapse {
   background: #fff;
   transition: all 0.2s ease;
 }
-.sec01 .container .btn-4:before {
+.kv-top .container .btn-4:before {
   height: 50%;
   width: 2px;
 }
-.sec01 .container .btn-4:after {
+.kv-top .container .btn-4:after {
   width: 20%;
   height: 2px;
 }
-.sec01 .container .btn-4:hover:before {
+.kv-top .container .btn-4:hover:before {
   height: 100%;
 }
-.sec01 .container .btn-4:hover:after {
+.kv-top .container .btn-4:hover:after {
   width: 100%;
 }
-.sec01 .container .main_img {
+.kv-top .container .kv-img {
   margin-top: 20px;
   width: 70%;
   position: relative;
@@ -122,7 +134,7 @@ nav .container .navbar-collapse {
     transform: rotate(360deg);
   }
 }
-.sec01 .container .main_img .lotate-img {
+.kv-top .container .kv-img .lotate-img {
   animation: spin 15s linear infinite;
   width: 100%;
 }
