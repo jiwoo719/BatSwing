@@ -56,7 +56,7 @@ nav {
     align-items: center;
 
     .kv-top-title {
-        font-family: "Kodchasan", sans-serif;
+        font-family: sans-serif;
         font-weight: bold;
         font-size: 28vw;
         color: #1E3542;
@@ -156,10 +156,12 @@ nav {
                 color: #F9982F;
             }
         }
-        .col-md-4{
-            .sec02-img{
+        .col{
+            .card{
+                border: none;
+                border-radius: 10px;
                 img{
-                    border-radius: 10px;
+                    border-radius: 10px 10px 0 0;
                 }
             }
         }

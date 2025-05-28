@@ -38,7 +38,7 @@ nav .container .navbar-collapse {
   align-items: center;
 }
 .kv-top .kv-top-title {
-  font-family: "Kodchasan", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 28vw;
   color: #1E3542;
@@ -129,8 +129,12 @@ nav .container .navbar-collapse {
 .sec02 .container .col-md-12 h2 {
   color: #F9982F;
 }
-.sec02 .container .col-md-4 .sec02-img img {
+.sec02 .container .col .card {
+  border: none;
   border-radius: 10px;
+}
+.sec02 .container .col .card img {
+  border-radius: 10px 10px 0 0;
 }
 
 footer {
