@@ -111,10 +111,13 @@ nav {
 }
 
 .sec01{
-    background: #F9982F;
+    background: #1E3542;
     .container{
         padding: 100px 20px;
         .col-md-6{
+            p{
+                color: #fff;
+            }
             .sec01-img{
                 width: 100%;
                 img{
@@ -122,11 +125,11 @@ nav {
                 }
             }
             h2{
-                color: #1E3542;
+                color: #F9982F;
                 margin-bottom: 20px;
             }
             h3{
-                color: #1E3542;
+                color: #F9982F;
                 font-weight: bold;
                 margin-top: 20px;
             }
@@ -135,7 +138,7 @@ nav {
                 li{
                     margin-top: 10px;
                     p{
-                        color: #1E3542;
+                        color: #fff;
                         font-weight: bold;
                         span{
                             font-weight: normal;
@@ -148,12 +151,12 @@ nav {
 }
 
 .sec02{
-    background: #1E3542;
+    background: #F9982F;
     .container{
         padding: 100px 20px;
         .col-md-12{
             h2{
-                color: #F9982F;
+                color: #1E3542;
             }
         }
         .col{
