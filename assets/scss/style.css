@@ -30,10 +30,6 @@ nav .container .navbar-collapse {
   justify-content: end;
 }
 
-nav {
-  position: sticky;
-}
-
 .kv-top {
   background-color: #F9982F;
   height: 750px;

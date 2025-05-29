@@ -1,6 +1,7 @@
 @import url("../scss/common.css");
 nav {
   background-color: #1E3542;
+  z-index: 9999;
 }
 nav .container .logo {
   color: #F9982F;
@@ -29,7 +30,7 @@ nav .container .navbar-collapse {
   justify-content: end;
 }
 
-.kv-top {
+.kv {
   width: 100%;
   background: #1E3542;
   text-align: center;
@@ -37,15 +38,18 @@ nav .container .navbar-collapse {
   justify-content: center;
   align-items: center;
 }
-.kv-top .kv-top-title {
+.kv .container-fluid {
+  padding: 0;
+}
+.kv .container-fluid .kv-top-title {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 28vw;
+  font-size: 26vw;
   color: #1E3542;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px #F9982F;
 }
-.kv-top .kv-title {
+.kv .container-fluid .kv-title {
   position: absolute;
   top: 20%;
   left: 33%;
@@ -53,20 +57,20 @@ nav .container .navbar-collapse {
   padding: 150px 85px;
   z-index: 2;
 }
-.kv-top .kv-title h3 {
+.kv .container-fluid .kv-title h3 {
   font-family: "Kodchasan", sans-serif;
   font-weight: bold;
   font-size: 96px;
   color: #F9982F;
 }
-.kv-top .kv-title p {
+.kv .container-fluid .kv-title p {
   font-family: "Rozha One", serif;
   font-weight: bold;
   font-size: 48px;
   color: #fff;
 }
-.kv-top .kv-img {
-  width: 26%;
+.kv .container-fluid .kv-img {
+  width: 25%;
   position: absolute;
   top: 21%;
   left: 44%;
@@ -80,7 +84,7 @@ nav .container .navbar-collapse {
     transform: rotate(360deg);
   }
 }
-.kv-top .kv-img img {
+.kv .container-fluid .kv-img img {
   width: 100%;
   animation: spin 15s linear infinite;
 }
@@ -139,6 +143,10 @@ nav .container .navbar-collapse {
 .sec02 .container .col .card img {
   border-radius: 10px 10px 0 0;
 }
+.sec02 .container .col .card .card-title {
+  font-family: "MangoDdobak-R";
+  font-weight: bold;
+}
 
 footer {
   background-color: #1E3542;
@@ -177,5 +185,77 @@ footer .container p {
 @media (max-width: 430px) {
   nav .container .logo {
     font-size: 30px;
+  }
+}
+/* media */
+@media (max-width: 1600px) {
+  .kv .kv-top .kv-title {
+    padding: 100px 45px;
+  }
+  .kv .kv-top .kv-img {
+    width: 25%;
+    top: 20%;
+  }
+}
+@media (max-width: 1280px) {
+  .kv .kv-top .kv-title {
+    left: 30%;
+    padding: 80px 45px;
+  }
+  .kv .kv-top .kv-title p {
+    font-size: 40px;
+  }
+  .kv .kv-top .kv-title h3 {
+    font-size: 80px;
+  }
+  .kv .kv-top .kv-img {
+    width: 25%;
+    top: 20%;
+  }
+}
+@media (max-width: 992px) {
+  .kv .kv-top .kv-title {
+    left: 30%;
+    padding: 70px 35px;
+  }
+  .kv .kv-top .kv-title p {
+    font-size: 30px;
+  }
+  .kv .kv-top .kv-title h3 {
+    font-size: 60px;
+  }
+  .kv .kv-top .kv-img {
+    width: 25%;
+    top: 21%;
+    left: 43%;
+  }
+}
+@media (max-width: 768px) {
+  .kv .kv-top .kv-title {
+    left: 28%;
+    top: 25%;
+    padding: 50px 22px;
+  }
+  .kv .kv-top .kv-title p {
+    font-size: 24px;
+  }
+  .kv .kv-top .kv-title h3 {
+    font-size: 50px;
+  }
+  .kv .kv-top .kv-img {
+    width: 25%;
+    top: 26%;
+    left: 42%;
+  }
+}
+@media (max-width: 576px) {
+  .kv .kv-top .kv-top-title {
+    padding: 50px 0;
+  }
+  .kv .kv-top .kv-title {
+    display: none;
+  }
+  .kv .kv-top .kv-img {
+    display: none;
   }
 }/*# sourceMappingURL=swing.css.map */

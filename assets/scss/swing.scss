@@ -2,6 +2,7 @@
 
 nav {
     background-color: #1E3542;
+    z-index: 9999;
 
     .container {
         .logo {
@@ -47,7 +48,7 @@ nav {
     }
 }
 
-.kv-top {
+.kv {
     width: 100%;
     background: #1E3542;
     text-align: center;
@@ -55,92 +56,108 @@ nav {
     justify-content: center;
     align-items: center;
 
-    .kv-top-title {
-        font-family: sans-serif;
-        font-weight: bold;
-        font-size: 28vw;
-        color: #1E3542;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px #F9982F;
-    }
+    .container-fluid {
+        padding: 0;
 
-    .kv-title {
-        position: absolute;
-        top: 20%;
-        left: 33%;
-        background-color: #1C313D;
-        padding: 150px 85px;
-        z-index: 2;
-        h3 {
-            font-family: "Kodchasan", sans-serif;
-            font-weight: bold; 
-            font-size: 96px;
-            color: #F9982F;
-        }
-
-        p {
-            font-family: 'Rozha One', serif;
+        .kv-top-title {
+            font-family: sans-serif;
             font-weight: bold;
-            font-size: 48px;
-            color: #fff;
+            font-size: 26vw;
+            color: #1E3542;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px #F9982F;
         }
-    }
 
-    .kv-img {
-        width: 26%;
-        position: absolute;
-        top: 21%;
-        left: 44%;
-        z-index: 1;
+        .kv-title {
+            position: absolute;
+            top: 20%;
+            left: 33%;
+            background-color: #1C313D;
+            padding: 150px 85px;
+            z-index: 2;
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
+            h3 {
+                font-family: "Kodchasan", sans-serif;
+                font-weight: bold;
+                font-size: 96px;
+                color: #F9982F;
             }
 
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        img {
-            width: 100%;
-            animation: spin 15s linear infinite;
-        }
-    }
-}
-
-.sec01{
-    background: #1E3542;
-    .container{
-        padding: 100px 20px;
-        .col-md-6{
-            p{
+            p {
+                font-family: 'Rozha One', serif;
+                font-weight: bold;
+                font-size: 48px;
                 color: #fff;
             }
-            .sec01-img{
+        }
+
+        .kv-img {
+            width: 25%;
+            position: absolute;
+            top: 21%;
+            left: 44%;
+            z-index: 1;
+
+            @keyframes spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            img {
                 width: 100%;
-                img{
+                animation: spin 15s linear infinite;
+            }
+        }
+    }
+
+}
+
+.sec01 {
+    background: #1E3542;
+
+    .container {
+        padding: 100px 20px;
+
+        .col-md-6 {
+            p {
+                color: #fff;
+            }
+
+            .sec01-img {
+                width: 100%;
+
+                img {
                     width: 100%;
                 }
             }
-            h2{
+
+            h2 {
                 color: #F9982F;
                 margin-bottom: 20px;
             }
-            h3{
+
+            h3 {
                 color: #F9982F;
                 font-weight: bold;
                 margin-top: 20px;
             }
-            ul{
+
+            ul {
                 list-style: none;
-                li{
+
+                li {
                     margin-top: 10px;
-                    p{
+
+                    p {
                         color: #fff;
                         font-weight: bold;
-                        span{
+
+                        span {
                             font-weight: normal;
                         }
                     }
@@ -150,21 +167,30 @@ nav {
     }
 }
 
-.sec02{
+.sec02 {
     background: #F9982F;
-    .container{
+
+    .container {
         padding: 100px 20px;
-        .col-md-12{
-            h2{
+
+        .col-md-12 {
+            h2 {
                 color: #1E3542;
             }
         }
-        .col{
-            .card{
+
+        .col {
+            .card {
                 border: none;
                 border-radius: 10px;
-                img{
+
+                img {
                     border-radius: 10px 10px 0 0;
+                }
+
+                .card-title {
+                    font-family: 'MangoDdobak-R';
+                    font-weight: bold;
                 }
             }
         }
@@ -219,6 +245,107 @@ footer {
         .container {
             .logo {
                 font-size: 30px;
+            }
+        }
+    }
+}
+
+/* media */
+
+@media(max-width: 1600px) {
+    .kv {
+        .kv-top{
+            .kv-title {
+                padding: 100px 45px;
+            }
+
+            .kv-img {
+                width: 25%;
+                top: 20%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1280px){
+    .kv {
+        .kv-top{
+            .kv-title {
+                left: 30%;
+                padding: 80px 45px;
+                p{
+                    font-size: 40px;
+                }
+                h3{
+                    font-size: 80px;
+                }
+            }
+
+            .kv-img {
+                width: 25%;
+                top: 20%;
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .kv {
+        .kv-top{
+            .kv-title {
+                left: 30%;
+                padding: 70px 35px;
+                p{
+                    font-size: 30px;
+                }
+                h3{
+                    font-size: 60px;
+                }
+            }
+
+            .kv-img {
+                width: 25%;
+                top: 21%;
+                left: 43%;
+            }
+        }
+    }
+}
+
+@media(max-width:768px){
+    .kv{
+        .kv-top{
+            .kv-title{
+                left: 28%;
+                top: 25%;
+                padding: 50px 22px;
+                p{
+                    font-size: 24px;
+                }
+                h3{
+                    font-size: 50px;
+                }
+            }
+            .kv-img{
+                width: 25%;
+                top: 26%;
+                left: 42%;
+            }
+        }
+    }
+}
+
+@media(max-width:576px){
+    .kv{
+        .kv-top{
+            .kv-top-title{
+                padding: 50px 0;
+            }
+            .kv-title{
+                display: none;
+            }
+            .kv-img{
+                display: none;
             }
         }
     }
